@@ -1,0 +1,1 @@
+export default{content:['./index.html','./src/**/*.{ts,tsx}'],theme:{extend:{colors:{bg:'var(--bg)',surface:'var(--surface)',line:'var(--border)',fg:'var(--text)',muted:'var(--muted)',accent:'var(--accent)',hl:'var(--hl)'},fontFamily:{serif:['"Iowan Old Style"','"Palatino Linotype"',"Georgia",'serif'],mono:['"Cascadia Code"','Consolas','ui-monospace','monospace']}}}}
