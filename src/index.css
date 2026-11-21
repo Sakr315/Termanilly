@@ -1,0 +1,15 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+:root,[data-theme=paper]{--bg:#f6f1e7;--surface:#fbf8f1;--border:#e4dccb;--text:#2b2a28;--muted:#756f63;--accent:#8a7355;--hl:#ece3d0;--tbg:#2f2c28;--ttext:#ece6d8;--tmuted:#a39d8e;--ok:#86b377;--err:#e0897d;--prompt:#d2a86a}
+[data-theme=midnight]{--bg:#1b1d21;--surface:#22252a;--border:#2e3238;--text:#e6e4df;--muted:#8b9099;--accent:#7f9cc9;--hl:#2a2f38;--tbg:#141619;--ttext:#dcdad4;--tmuted:#7d838c;--ok:#8fbf86;--err:#e08a85;--prompt:#8fb0e0}
+[data-theme=matcha]{--bg:#f3f1e6;--surface:#f8f6ec;--border:#dcdcc6;--text:#2f3a2c;--muted:#6d7761;--accent:#5f7d4c;--hl:#e3e8d0;--tbg:#2b3427;--ttext:#e4ead6;--tmuted:#93a086;--ok:#a9cf8a;--err:#e39a86;--prompt:#b5c98a}
+[data-theme=rose]{--bg:#f6ecea;--surface:#fbf4f2;--border:#e6d3d0;--text:#3a2a2d;--muted:#85696d;--accent:#8c3b4a;--hl:#efdcd9;--tbg:#3a2a2f;--ttext:#f0e4e2;--tmuted:#a88d91;--ok:#a8c98f;--err:#f0948f;--prompt:#d9a0a8}
+[data-theme=mocha]{--bg:#2a211c;--surface:#31271f;--border:#45372c;--text:#eadfce;--muted:#a39484;--accent:#c8935a;--hl:#3d3025;--tbg:#1f1712;--ttext:#eadfce;--tmuted:#8f8070;--ok:#a9c98a;--err:#e59a85;--prompt:#d8a76a}
+[data-theme=ocean]{--bg:#0f1c2b;--surface:#14263a;--border:#223a52;--text:#dbe6ef;--muted:#86a0b4;--accent:#5fa8a8;--hl:#1a3148;--tbg:#0a1520;--ttext:#d3e1ea;--tmuted:#6f8aa0;--ok:#8fcf9a;--err:#e8998f;--prompt:#7ec2bf}
+html{font-size:16px}body{background:var(--bg);color:var(--text);font-family:system-ui,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased;overflow:hidden}
+*{transition:background-color .2s,border-color .2s,color .2s}
+@keyframes rowin{from{opacity:0;transform:translateY(-3px)}}.row-in{animation:rowin .25s ease}
+[data-motion=reduced] *{animation:none!important;transition:none!important}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.btn{border:1px solid var(--border);border-radius:8px;padding:.35rem .8rem;font-size:.85rem}.btn:hover{background:var(--hl)}
+.btn-primary{background:var(--accent);color:var(--bg);border-color:var(--accent)}.btn-primary:hover{background:var(--accent);opacity:.9}
+kbd{font-size:.7rem;color:var(--muted);border:1px solid var(--border);border-radius:5px;padding:0 .3rem}
